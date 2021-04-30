@@ -11,7 +11,7 @@ import {
 import { makeStyles } from '@material-ui/core/styles';
 import { selectPageSize, selectUnit } from '../../store/display';
 import { kelvinToCelsius, kelvinToFarenheit } from '../../shared/temperature';
-import { sortByCountDesc } from '../../shared/helpers';
+import { iconUrl, sortByCountDesc } from '../../shared/helpers';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -99,7 +99,7 @@ const WeatherCard = ({ day, data, active, onActivate }) => {
           <Box width={1} p={1}>
             <Avatar
               alt={avgWeather.description}
-              src={`http://openweathermap.org/img/wn/${avgWeather.icon}@2x.png`}
+              src={iconUrl(avgWeather.icon)}
               className={`${classes.weather} ${classes.avgWeather}`}
             />
             <Box width={1} px={1} pb={1}>
@@ -122,7 +122,7 @@ const WeatherCard = ({ day, data, active, onActivate }) => {
                       <Avatar
                         key={`${slice.weather[0].id}-${index}`}
                         alt={slice.weather[0].description}
-                        src={`http://openweathermap.org/img/wn/${slice.weather[0].icon}@2x.png`}
+                        src={iconUrl(slice.weather[0].icon)}
                         className={classes.weather}
                       />
                     ))
@@ -134,7 +134,7 @@ const WeatherCard = ({ day, data, active, onActivate }) => {
                       <Avatar
                         key={`${slice.weather[0].id}-${index}`}
                         alt={slice.weather[0].description}
-                        src={`http://openweathermap.org/img/wn/${slice.weather[0].icon}@2x.png`}
+                        src={iconUrl(slice.weather[0].icon)}
                         className={classes.weather}
                       />
                     ))

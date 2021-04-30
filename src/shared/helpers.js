@@ -11,3 +11,5 @@ export const clampIndex = (index, start, end) => {
 };
 
 export const sortByCountDesc = (a, b) => b.count - a.count;
+
+export const iconUrl = (icon) => `https://openweathermap.org/img/wn/${icon}@2x.png`;
