@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { selectLoading } from '../../store/data';
 import WeatherUnit from './WeatherUnit';
 import WeatherInfo from './WeatherInfo';
+import WeatherChart from './WeatherChart';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -33,6 +34,7 @@ const Weather = () => {
         >
           <WeatherUnit />
           <WeatherInfo />
+          <WeatherChart />
         </Grid>
       </Box>
     </Fade>

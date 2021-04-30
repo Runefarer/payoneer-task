@@ -13,3 +13,14 @@ export const getDay = (dateText) => {
 
   return `${dayOfMonth} ${MONTHS[month - 1]} ${`${year}`.slice(-2)}`;
 };
+
+export const getTime = (dateText) => {
+  const timeText = dateText.split(' ')[1];
+  const [hour, minute] = timeText.split(':').map(toInt);
+
+  if (hour >= 12) {
+    return `${hour > 12 ? hour - 12 : hour}:${`${minute}`.padStart(2, '0')} PM`;
+  } else {
+    return `${(hour === 0 ? `00` : hour)}:${`${minute}`.padStart(2, '0')} AM`;
+  }
+};
