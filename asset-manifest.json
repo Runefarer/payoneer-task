@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/payoneer-task/static/js/main.fb685834.chunk.js",
-    "main.js.map": "/payoneer-task/static/js/main.fb685834.chunk.js.map",
+    "main.js": "/payoneer-task/static/js/main.4bc7210e.chunk.js",
+    "main.js.map": "/payoneer-task/static/js/main.4bc7210e.chunk.js.map",
     "runtime-main.js": "/payoneer-task/static/js/runtime-main.b1db0126.js",
     "runtime-main.js.map": "/payoneer-task/static/js/runtime-main.b1db0126.js.map",
     "static/js/2.84a2c7ac.chunk.js": "/payoneer-task/static/js/2.84a2c7ac.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.b1db0126.js",
     "static/js/2.84a2c7ac.chunk.js",
-    "static/js/main.fb685834.chunk.js"
+    "static/js/main.4bc7210e.chunk.js"
   ]
 }
